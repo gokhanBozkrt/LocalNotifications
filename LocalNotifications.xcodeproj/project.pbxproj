@@ -14,6 +14,7 @@
 		BBADB77F283A8F8F00C6C57A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBADB77E283A8F8F00C6C57A /* Launch Screen.storyboard */; };
 		F7CEEAF72A63B8AF0012F2F4 /* LocalNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CEEAF62A63B8AF0012F2F4 /* LocalNotificationCenter.swift */; };
 		F7CEEAF92A63BED50012F2F4 /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CEEAF82A63BED50012F2F4 /* LocalNotification.swift */; };
+		F7CEEAFD2A63F22F0012F2F4 /* sand.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7CEEAFC2A63F22F0012F2F4 /* sand.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		BBADB77E283A8F8F00C6C57A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F7CEEAF62A63B8AF0012F2F4 /* LocalNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationCenter.swift; sourceTree = "<group>"; };
 		F7CEEAF82A63BED50012F2F4 /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
+		F7CEEAFC2A63F22F0012F2F4 /* sand.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sand.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				BBADB772283A8F3700C6C57A /* NotificationListView.swift */,
 				F7CEEAF62A63B8AF0012F2F4 /* LocalNotificationCenter.swift */,
 				F7CEEAF82A63BED50012F2F4 /* LocalNotification.swift */,
+				F7CEEAFC2A63F22F0012F2F4 /* sand.jpg */,
 				BBADB774283A8F3800C6C57A /* Assets.xcassets */,
 				BBADB77E283A8F8F00C6C57A /* Launch Screen.storyboard */,
 				BBADB776283A8F3800C6C57A /* Preview Content */,
@@ -137,6 +140,7 @@
 				BBADB77F283A8F8F00C6C57A /* Launch Screen.storyboard in Resources */,
 				BBADB778283A8F3800C6C57A /* Preview Assets.xcassets in Resources */,
 				BBADB775283A8F3800C6C57A /* Assets.xcassets in Resources */,
+				F7CEEAFD2A63F22F0012F2F4 /* sand.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +283,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LocalNotifications/Preview Content\"";
-				DEVELOPMENT_TEAM = RKV4UP49S6;
+				DEVELOPMENT_TEAM = ZYUPV82V3X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -309,7 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LocalNotifications/Preview Content\"";
-				DEVELOPMENT_TEAM = RKV4UP49S6;
+				DEVELOPMENT_TEAM = ZYUPV82V3X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
