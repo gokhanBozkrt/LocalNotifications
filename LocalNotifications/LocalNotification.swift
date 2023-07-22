@@ -14,9 +14,11 @@ struct LocalNotification {
     var body: String
     var timeInterval: Double?
     var dateComponents: DateComponents?
+    var userInfo: [AnyHashable: Any]?
     var repeats: Bool
     var subtitle: String?
     var bundleImageName: String?
+    var categoryIdentifier: String?
     
     init(identifier: String, title: String, body: String, timeInterval: Double, repeats: Bool) {
         self.identifier = identifier

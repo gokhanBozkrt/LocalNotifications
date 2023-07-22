@@ -24,6 +24,8 @@ struct NotificationListView: View {
                                 var localNotification = LocalNotification(identifier: UUID().uuidString, title: "Yerel Notifcation", body: "Deneme", timeInterval: 10, repeats: false)
                                 localNotification.subtitle = "Alt başlık eklendi"
                                 localNotification.bundleImageName = "sand.jpg"
+                                localNotification.categoryIdentifier = "snooze"
+                                localNotification.userInfo = ["nextView" : NextView.renew.rawValue]
                                 await lnManager.schedule(localNotification: localNotification)
                             }
                         }
@@ -43,6 +45,21 @@ struct NotificationListView: View {
                                 }
                             }
                             .buttonStyle(.bordered)
+                        }
+                        
+                        Button("Promo Offer") {
+                            Task {
+                                let dataComponents = DateComponents(day: 1, hour: 1, minute: 0)
+                                var localNotification = LocalNotification(identifier: UUID().uuidString,
+                                                                         title: "Special Promotion",
+                                                                         body: "Avantajlı teklifi değerlendir.",
+                                                                         dateComponents: dataComponents,
+                                                                         repeats: true)
+                                localNotification.bundleImageName = "sand.jpg"
+                                localNotification.categoryIdentifier = "snooze"
+                                localNotification.userInfo = ["nextView" : NextView.promo.rawValue]
+                                await lnManager.schedule(localNotification: localNotification)
+                            }
                         }
                     }
                     .frame(width: 300)
@@ -74,6 +91,9 @@ struct NotificationListView: View {
                     .buttonStyle(.borderedProminent)
                 }
             }
+            .sheet(item: $lnManager.nextView, content: { nextView in
+                nextView.view()
+            })
             .navigationTitle("Local Notifications")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
